@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skateboard exchange community</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://vjs.zencdn.net/5-unsafe/video-js.css'>
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+        <div class="sidebar">
+            <span class="logo">
+                <svg t="1684916951197" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" p-id="12322" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="128" height="128">
+                    <path
+                        d="M873.32864 358.4a163.82976 163.82976 0 0 1-116.6336 48.34304l-489.3696-0.07168A163.84 163.84 0 0 1 150.66112 358.4L102.4 406.67136a232.5504 232.5504 0 0 0 164.92544 68.27008l489.3696 0.06144A232.58112 232.58112 0 0 0 921.6 406.67136L873.32864 358.4zM392.52992 588.8c0 42.37312-34.39616 76.8-76.8 76.8a76.8 76.8 0 1 1 76.8-76.8zM785.07008 588.8c0 42.37312-34.39616 76.8-76.8 76.8s-76.8-34.42688-76.8-76.8c0-42.40384 34.39616-76.8 76.8-76.8s76.8 34.39616 76.8 76.8z"
+                        p-id="12323" fill="#ffffff"></path>
+                </svg>
+            </span>
+            <a class="logo-expand" href="#">skateboard</a>
+            <div class="side-wrapper">
+                <div class="side-title">MENU</div>
+                <div class="side-menu">
+                    <a class="sidebar-link home-nav is-active" href="#">
+                        <svg t="1684922017666" class="icon" viewBox="0 0 1152 1024" version="1.1">
+                            <path
+                                d="M1151.6 511c0 36-30 64.2-64 64.2h-64l1.4 320.4c0 5.4-0.4 10.8-1 16.2V944c0 44.2-35.8 80-80 80h-32c-2.2 0-4.4 0-6.6-0.2-2.8 0.2-5.6 0.2-8.4 0.2H784c-44.2 0-80-35.8-80-80v-176c0-35.4-28.6-64-64-64h-128c-35.4 0-64 28.6-64 64v176c0 44.2-35.8 80-80 80h-111.8c-3 0-6-0.2-9-0.4-2.4 0.2-4.8 0.4-7.2 0.4h-32c-44.2 0-80-35.8-80-80V720c0-1.8 0-3.8 0.2-5.6v-139.2H64c-36 0-64-28-64-64.2 0-18 6-34 20-48L532.8 16c14-14 30-16 44-16s30 4 42 14l510.8 449c16 14 24 30 22 48z"
+                                p-id="16374" fill="#ffffff"></path>
+                        </svg>
+                        Home
+                    </a>
+                    <a class="sidebar-link video_nav" href="#">
+                        <svg t="1684922337470" class="icon" viewBox="0 0 1024 1024" version="1.1">
+                            <path
+                                d="M274 78c-29.6-18.2-66.8-18.8-97-1.8S128 125.2 128 160v704c0 34.8 18.8 66.8 49 83.8S244.4 964 274 946l576-352c28.6-17.4 46-48.4 46-82s-17.4-64.4-46-82L274 78z"
+                                p-id="16974" fill="#8f8f8f"></path>
+                        </svg>
+                        Video
+                    </a>
+                    <a class="sidebar-link music_nav" href="#">
+                        <svg t="1684922455337" class="icon" viewBox="0 0 1024 1024" version="1.1">
+                            <path
+                                d="M998.094732 12.70666c16.198292 11.998735 25.797279 31.19671 25.797279 51.394579v671.929133c0 88.390678-85.990931 159.983127-191.979752 159.983127s-191.979752-71.592449-191.979752-159.983127 85.990931-159.983127 191.979752-159.983127c22.397638 0 43.99536 3.199663 63.993251 9.19903V294.076984l-511.946006 153.583802V864.016873c0 88.390678-85.990931 159.983127-191.979752 159.983127S0 952.407551 0 864.016873s85.990931-159.983127 191.979752-159.983127c22.397638 0 43.99536 3.199663 63.993251 9.19903V256.080991c0-28.197026 18.598038-53.19439 45.595191-61.393524l639.932507-191.979753c19.397954-5.799388 40.39574-2.199768 56.594031 9.998946z"
+                                p-id="17184" fill="#8f8f8f"></path>
+                        </svg>
+                        Music
+                    </a>
+                    <a class="sidebar-link" href="#">
+                        <svg t="1684923520124" class="icon" viewBox="0 0 1152 1024" version="1.1">
+                            <path
+                                d="M506.6 70.2c12.2-23.6 3-52.6-20.4-64.8s-52.6-3-64.8 20.4L235.2 384H64c-35.4 0-64 28.6-64 64s28.6 64 64 64l103.8 415C182 984 233.2 1024 292 1024h568c58.8 0 110-40 124.2-97L1088 512c35.4 0 64-28.6 64-64s-28.6-64-64-64h-171.2L730.6 25.8c-12.2-23.4-41.2-32.6-64.8-20.4s-32.6 41.2-20.4 64.8L808.6 384H343.4l163.2-313.8zM384 608v192c0 17.6-14.4 32-32 32s-32-14.4-32-32v-192c0-17.6 14.4-32 32-32s32 14.4 32 32z m192-32c17.6 0 32 14.4 32 32v192c0 17.6-14.4 32-32 32s-32-14.4-32-32v-192c0-17.6 14.4-32 32-32z m256 32v192c0 17.6-14.4 32-32 32s-32-14.4-32-32v-192c0-17.6 14.4-32 32-32s32 14.4 32 32z"
+                                p-id="17560" fill="#8f8f8f"></path>
+                        </svg>
+                        Skate shop
+                    </a>
+                </div>
+            </div>
+            <div class="side-wrapper">
+                <div class="side-title">MORE</div>
+                <div class="side-menu">
+                    <a class="sidebar-link" href="#">
+                        <svg t="1684923832946" class="icon" viewBox="0 0 1152 1024" version="1.1">
+                            <path
+                                d="M768 256c141.4 0 256 114.6 256 256s-114.6 256-256 256H384c-141.4 0-256-114.6-256-256s114.6-256 256-256h384z m384 256c0-212-172-384-384-384H384C172 128 0 300 0 512s172 384 384 384h384c212 0 384-172 384-384z m-768 192a192 192 0 1 0 0-384 192 192 0 1 0 0 384z"
+                                p-id="18024" fill="#8f8f8f"></path>
+                        </svg>
+                        Setting
+                    </a>
+                    <a class="sidebar-link about_us " href="#">
+                        <svg t="1684923634210" class="icon" viewBox="0 0 1024 1024" version="1.1">
+                            <path
+                                d="M928 512a416 416 0 1 0-832 0 416 416 0 1 0 832 0zM0 512a512 512 0 1 1 1024 0 512 512 0 1 1-1024 0z m339.6-181.4c15.8-44.6 58.2-74.6 105.6-74.6h116.6c69.8 0 126.2 56.6 126.2 126.2 0 45.2-24.2 87-63.4 109.6L560 528.8c-0.4 26-21.8 47.2-48 47.2-26.6 0-48-21.4-48-48v-27c0-17.2 9.2-33 24.2-41.6l88.6-50.8c9.4-5.4 15.2-15.4 15.2-26.2 0-16.8-13.6-30.2-30.2-30.2h-116.6c-6.8 0-12.8 4.2-15 10.6l-0.8 2.4c-8.8 25-36.4 38-61.2 29.2s-38-36.4-29.2-61.2l0.8-2.4zM448 704a64 64 0 1 1 128 0 64 64 0 1 1-128 0z"
+                                p-id="17810" fill="#8f8f8f"></path>
+                        </svg>
+                        About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="user-settings">
+                    <img class="user-img"
+                        src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F7c535341-5fa7-4da5-8666-7beeb2e0ed03%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1687848269&t=5481f740a45f90f8c6da5d1983cf6e23"
+                        alt="">
+                    <div class="user-name">海绵宝宝</div>
+                    <svg viewBox="0 0 492 492" fill="currentColor">
+                        <path
+                            d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z">
+                        </path>
+                    </svg>
+                    <div class="notify">
+                        <div class="notification"></div>
+                        <svg t="1684924109056" class="icon" viewBox="0 0 1024 1024" version="1.1">
+                            <path
+                                d="M511.975 0c-35.4 0-64 28.6-64 64v38.4C301.975 132 191.975 261.2 191.975 416v37.6c0 94-34.6 184.8-97 255.2l-14.8 16.6c-16.8 18.8-20.8 45.8-10.6 68.8S102.775 832 127.975 832h768c25.2 0 48-14.8 58.4-37.8s6.2-50-10.6-68.8l-14.8-16.6c-62.4-70.4-97-161-97-255.2V416c0-154.8-110-284-256-313.6V64c0-35.4-28.6-64-64-64z m90.6 986.6c24-24 37.4-56.6 37.4-90.6H383.975c0 34 13.4 66.6 37.4 90.6S477.975 1024 511.975 1024s66.6-13.4 90.6-37.4z"
+                                p-id="18340" fill="#8f8f8f"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container">
+                <div class="main-header anim" style="--delay: 0s">发现</div>
+                <div class="main-blogs">
+                    <div class="main-blog anim" style="--delay: .1s">
+                        <div class="main-blog__title">如何做好基本的跳跃&nbsp并安全落地</div>
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img"
+                                    src="https://img0.baidu.com/it/u=4189784034,1125241886&fm=253&fmt=auto&app=138&f=JPEG?w=300&h=300" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">蟹堡王佛山分王</div>
+                                <div class="author-info">53K views <span class="seperate"></span> 2 weeks ago</div>
+                            </div>
+                        </div>
+                        <div class="main-blog__time">7 min</div>
+                    </div>
+                    <div class="main-blog anim" style="--delay: .2s">
+                        <div class="main-blog__title">每天一个小鸡席 教会你如何稳步提升</div>
+                        <div class="main-blog__author tips">
+                            <div class="main-blog__time">7 min</div>
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img"
+                                    src="https://img0.baidu.com/it/u=4189784034,1125241886&fm=253&fmt=auto&app=138&f=JPEG?w=300&h=300" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">蟹堡王</div>
+                                <div class="author-info">53K views <span class="seperate"></span>2 weeks ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-header anim" style="--delay: .3s">视频</div>
+                <div class="videos">
+                    <div class="video anim" style="--delay: .4s">
+                        <div class="video-time">8 min</div>
+                        <div class="video-wrapper">
+                            <video muted=""
+                                poster="https://img1.baidu.com/it/u=3338645087,2277022147&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500">
+                                <source
+                                    src="https://player.vimeo.com/external/436572488.sd.mp4?s=eae5fb490e214deb9ff532dd98d101efe94e7a8b&profile_id=139&oauth2_token_id=57447761"
+                                    type="video/mp4">
+                            </video>
+                            <div class="author-img__wrapper video-author">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img"
+                                    src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fblog%2F202112%2F03%2F20211203231714_96584.thumb.1000_0.jpg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1687852589&t=5c640a542d7e41c36291b21ee0d33328" />
+                            </div>
+                        </div>
+                        <div class="video-by">哈基米</div>
+                        <div class="video-name">abcdefghijklmnopq rstuvwxyz</div>
+                        <div class="video-view">99K views<span class="seperate video-seperate"></span>1 week ago</div>
+                    </div>
+                    <div class="video anim" style="--delay: .5s">
+                        <div class="video-time">5 min</div>
+                        <div class="video-wrapper">
+                            <video muted=""
+                                poster="https://img1.baidu.com/it/u=3338645087,2277022147&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500">
+                                <source
+                                    src="https://player.vimeo.com/external/449972745.sd.mp4?s=9943177fe8a6147b7bc4598259401f06ec57878a&profile_id=139&oauth2_token_id=57447761"
+                                    type="video/mp4">
+                            </video>
+                            <div class="author-img__wrapper video-author">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img"
+                                    src="https://img0.baidu.com/it/u=561554113,2970143017&fm=253&fmt=auto&app=138&f=JPEG?w=200&h=200" />
+                            </div>
+                        </div>
+                        <div class="video-by">哈基米</div>
+                        <div class="video-name">哈基米哈基米哈基米哈基米哈基米哈基米</div>
+                        <div class="video-view">99K views<span class="seperate video-seperate"></span>1 week ago</div>
+                    </div>
+                    <div class="video anim" style="--delay: .6s">
+                        <div class="video-time">7 min</div>
+                        <div class="video-wrapper">
+                            <video muted=""
+                                poster="https://img1.baidu.com/it/u=3338645087,2277022147&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500">
+                                <source
+                                    src="https://player.vimeo.com/external/436553499.sd.mp4?s=0e44527f269278743db448761e35c5e39cfaa52c&profile_id=139&oauth2_token_id=57447761"
+                                    type="video/mp4">
+                            </video>
+                            <div class="author-img__wrapper video-author">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img"
+                                    src="https://img1.baidu.com/it/u=3687892653,3362309361&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=800" />
+                            </div>
+                        </div>
+                        <div class="video-by">哈基米</div>
+                        <div class="video-name">哈基米哈基米哈基米哈基米哈基米哈基米</div>
+                        <div class="video-view">99K views<span class="seperate video-seperate"></span>1 week ago</div>
+                    </div>
+                    <div class="video anim" style="--delay: .7s">
+                        <div class="video-time">6 min</div>
+                        <div class="video-wrapper">
+                            <video muted=""
+                                poster="https://img1.baidu.com/it/u=3338645087,2277022147&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500">
+                                <source
+                                    src="https://player.vimeo.com/external/361861493.sd.mp4?s=19d8275ca755d653042a87ef28b2f0b2eabf57d0&profile_id=139&oauth2_token_id=57447761"
+                                    type="video/mp4">
+                            </video>
+                            <div class="author-img__wrapper video-author">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img"
+                                    src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202006%2F10%2F20200610232104_ghyet.thumb.1000_0.jpg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1687852860&t=81081b63c8ca3e3e6f56a2bb507bedea" />
+                            </div>
+                        </div>
+                        <div class="video-by">哈基米</div>
+                        <div class="video-name">哈基米哈基米哈基米哈基米哈基米哈基米</div>
+                        <div class="video-view">99K views<span class="seperate video-seperate"></span>1 week ago</div>
+                    </div>
+                </div>
+                <div class="small-header anim" style="--delay: .5s">音乐</div>
+                <div class="music">
+                </div>
+                <!-- 与主页面对应的别的功能区的内容 -->
+                <div class="video-area">
+                    <div class="video-stream">
+                        <video id="my_video_1" class="video-js vjs-default-skin anim" width="640px" height="267px"
+                            controls preload="none"
+                            poster='https://img1.baidu.com/it/u=3338645087,2277022147&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500'
+                            data-setup='{ "aspectRatio":"940:620", "playbackRates": [1, 1.5, 2] }'>
+                            <source
+                                src="https://player.vimeo.com/external/390402719.sd.mp4?s=20cfdb066c4253047562b65bd4e411b86a004bc5&profile_id=139&oauth2_token_id=57447761"
+                                type='video/mp4' />
+                            <source
+                                src="https://player.vimeo.com/external/390402719.sd.mp4?s=20cfdb066c4253047562b65bd4e411b86a004bc5&profile_id=139&oauth2_token_id=57447761"
+                                type='video/webm' />
+                        </video>
+                        <div class="video-detail">
+                            <div class="video-content">
+                                <div class="video-p-wrapper anim" style="--delay: .1s">
+                                    <div class="author-img__wrapper video-author video-p">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check">
+                                            <path d="M20 6L9 17l-5-5" />
+                                        </svg>
+                                        <img class="author-img"
+                                            src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F7c535341-5fa7-4da5-8666-7beeb2e0ed03%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1687848269&t=5481f740a45f90f8c6da5d1983cf6e23" />
+                                    </div>
+                                    <div class="video-p-detail">
+                                        <div class="video-p-name">阿里</div>
+                                        <div class="video-p-sub">1,980,893 粉丝</div>
+                                    </div>
+                                    <div class="button-wrapper">
+                                        <button class="like">
+                                            <svg viewBox="0 0 1024 1024" version="1.1">
+                                                <path
+                                                    d="M32.20358 520.403757c-45.199663 25.799808-40.999694 94.599294 7.199946 114.599145L320.001432 752.002029v206.598459c0 36.19973 29.199782 65.399512 65.399513 65.399512 19.399855 0 37.799718-8.599936 50.199625-23.599824l123.999075-148.598891 247.798151 103.19923c37.799718 15.799882 81.599391-8.999933 87.799345-49.399632l127.999045-831.993792c3.799972-24.199819-6.799949-48.599637-26.999799-62.399535s-46.599652-14.999888-67.999492-2.799979l-895.993315 511.99618z m104.199222 50.99962L819.397707 181.206288 380.200983 672.002626l2.399982 1.999985-246.198163-102.599234z m670.195 279.397915l-333.197514-138.998963 428.196805-478.596429-94.999291 617.595392z"
+                                                    p-id="16528" fill="#e6e6e6"></path>
+                                            </svg>
+                                            私信
+                                        </button>
+                                        <button class="like red">
+                                            <svg t="1685255651520" class="icon" viewBox="0 0 1024 1024" version="1.1">
+                                                <path
+                                                    d="M95.2 600.8l361.4 337.4c15 14 34.8 21.8 55.4 21.8s40.4-7.8 55.4-21.8l361.4-337.4c60.8-56.6 95.2-136 95.2-219v-11.6c0-139.8-101-259-238.8-282-91.2-15.2-184 14.6-249.2 79.8l-24 24-24-24c-65.2-65.2-158-95-249.2-79.8C101 111.2 0 230.4 0 370.2v11.6c0 83 34.4 162.4 95.2 219z"
+                                                    p-id="17118" fill="#e6e6e6"></path>
+                                            </svg>
+                                            Liked
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="video-p-title anim" style="--delay: .2s">【滑板】感受滑板生活的每一次昼夜交替
+                                </div>
+                                <div class="video-p-subtitle anim" style="--delay: .3s">哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米
+                                    哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 </div>
+                                <div class="video-p-subtitle anim" style="--delay: .4s">哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米
+                                    哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 哈基米 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-stream">
+                        <div class="chat">
+                            <div class="chat-header anim">评论<span><svg viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.212 7.762c0 2.644-2.163 4.763-4.863 4.763-2.698 0-4.863-2.119-4.863-4.763C4.486 5.12 6.651 3 9.35 3c2.7 0 4.863 2.119 4.863 4.762zM2 17.917c0-2.447 3.386-3.06 7.35-3.06 3.985 0 7.349.634 7.349 3.083 0 2.448-3.386 3.06-7.35 3.06C5.364 21 2 20.367 2 17.917zM16.173 7.85a6.368 6.368 0 01-1.137 3.646c-.075.107-.008.252.123.275.182.03.369.048.56.052 1.898.048 3.601-1.148 4.072-2.95.697-2.675-1.35-5.077-3.957-5.077a4.16 4.16 0 00-.818.082c-.036.008-.075.025-.095.055-.025.04-.007.09.019.124a6.414 6.414 0 011.233 3.793zm3.144 5.853c1.276.245 2.115.742 2.462 1.467a2.107 2.107 0 010 1.878c-.531 1.123-2.245 1.485-2.912 1.578a.207.207 0 01-.234-.232c.34-3.113-2.367-4.588-3.067-4.927-.03-.017-.036-.04-.034-.055.002-.01.015-.025.038-.028 1.515-.028 3.145.176 3.747.32z" />
+                                    </svg>
+                                    15,988 人看过
+                                </span>
+                            </div>
+                            <div class="message-container">
+                                <div class="message anim" style="--delay: .1s">
+                                    <div class="author-img__wrapper video-author video-p">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check">
+                                            <path d="M20 6L9 17l-5-5" />
+                                        </svg>
+                                        <img class="author-img"
+                                            src="https://img0.baidu.com/it/u=3791424174,2701193758&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" />
+                                    </div>
+                                    <div class="msg-wrapper">
+                                        <div class="msg__name video-p-name">欧系派大星</div>
+                                        <div class="msg__content video-p-sub"> 感受滑板生活的每一次昼夜交替</div>
+                                    </div>
+                                </div>
+                                <div class="message anim" style="--delay: .2s">
+                                    <div class="author-img__wrapper video-author video-p">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check">
+                                            <path d="M20 6L9 17l-5-5" />
+                                        </svg>
+                                        <img class="author-img"
+                                            src="https://img0.baidu.com/it/u=3791424174,2701193758&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" />
+                                    </div>
+                                    <div class="msg-wrapper">
+                                        <div class="msg__name video-p-name offline">欧系派大星</div>
+                                        <div class="msg__content video-p-sub"> 感受滑板生活的每一次昼夜交替感受滑板生活的每一次昼夜交替
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message anim" style="--delay: .3s">
+                                    <div class="author-img__wrapper video-author video-p">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check">
+                                            <path d="M20 6L9 17l-5-5" />
+                                        </svg>
+                                        <img class="author-img"
+                                            src="https://img0.baidu.com/it/u=3791424174,2701193758&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" />
+                                    </div>
+                                    <div class="msg-wrapper">
+                                        <div class="msg__name video-p-name offline">欧系派大星</div>
+                                        <div class="msg__content video-p-sub"> 感受滑板生活的每一次昼夜交替感受滑板生活的每一次昼夜交替
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message anim" style="--delay: .4s">
+                                    <div class="author-img__wrapper video-author video-p">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check">
+                                            <path d="M20 6L9 17l-5-5" />
+                                        </svg>
+                                        <img class="author-img"
+                                            src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fblog%2F202106%2F09%2F20210609081952_51ef5.thumb.1000_0.jpg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1687850630&t=5021f051046187e16e4cc81e658622ed" />
+                                    </div>
+                                    <div class="msg-wrapper">
+                                        <div class="msg__name video-p-name">欧系派大星</div>
+                                        <div class="msg__content video-p-sub"> 感受滑板生活的每一次昼夜交替
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message anim" style="--delay: .5s">
+                                    <div class="author-img__wrapper video-author video-p">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check">
+                                            <path d="M20 6L9 17l-5-5" />
+                                        </svg>
+                                        <img class="author-img"
+                                            src="https://img0.baidu.com/it/u=3791424174,2701193758&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" />
+                                    </div>
+                                    <div class="msg-wrapper">
+                                        <div class="msg__name video-p-name offline">欧系派大星</div>
+                                        <div class="msg__content video-p-sub"> 感受滑板生活的每一次昼夜交替感受滑板生活的每一次昼夜交替
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message anim" style="--delay: .6s">
+                                    <div class="author-img__wrapper video-author video-p">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check">
+                                            <path d="M20 6L9 17l-5-5" />
+                                        </svg>
+                                        <img class="author-img"
+                                            src="https://img0.baidu.com/it/u=3791424174,2701193758&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" />
+                                    </div>
+                                    <div class="msg-wrapper">
+                                        <div class="msg__name video-p-name offline">欧系派大星</div>
+                                        <div class="msg__content video-p-sub"> 感受滑板生活的每一次昼夜交替感受滑板生活的每一次昼夜交替
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="chat-footer anim" style="--delay: .1s">
+                                <input type="text" placeholder="Write your message">
+                            </div> -->
+                            <div class="input-box" style="--delay: .1s">
+                                <img class="user-img"
+                                    src="https://images.unsplash.com/photo-1587918842454-870dbd18261a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=943&q=80"
+                                    alt="">
+                                <input type="text" placeholder="请输入" />
+                                <div class="send-btn">
+                                    <svg viewBox="0 0 1024 1024" version="1.1">
+                                        <path
+                                            d="M32.20358 520.403757c-45.199663 25.799808-40.999694 94.599294 7.199946 114.599145L320.001432 752.002029v206.598459c0 36.19973 29.199782 65.399512 65.399513 65.399512 19.399855 0 37.799718-8.599936 50.199625-23.599824l123.999075-148.598891 247.798151 103.19923c37.799718 15.799882 81.599391-8.999933 87.799345-49.399632l127.999045-831.993792c3.799972-24.199819-6.799949-48.599637-26.999799-62.399535s-46.599652-14.999888-67.999492-2.799979l-895.993315 511.99618z m104.199222 50.99962L819.397707 181.206288 380.200983 672.002626l2.399982 1.999985-246.198163-102.599234z m670.195 279.397915l-333.197514-138.998963 428.196805-478.596429-94.999291 617.595392z"
+                                            p-id="16528" fill="#e6e6e6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-vid__container">
+                            <div class="chat-vid__title anim" style="--delay: .3s">相关视频</div>
+                            <div class="chat-vid anim" style="--delay: .4s">
+                                <div class="chat-vid__wrapper">
+                                    <div class="chat-vid__img">
+                                        <img
+                                            src="https://tingniao.com/sina.php?url=https://tvax4.sinaimg.cn/large/0087Izpsly4gu36fw7i8gj30u011iq9c.jpg" />
+                                    </div>
+
+                                    <div class="chat-vid__content">
+                                        <div class="chat-vid__name">Prepare for your first skateboard jump</div>
+                                        <div class="chat-vid__by">Jordan Wise</div>
+                                        <div class="chat-vid__info">125.908 views <span class="seperate"></span>2 days
+                                            ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-vid anim" style="--delay: .5s">
+                                <div class="chat-vid__wrapper">
+                                    <div class="chat-vid__img">
+                                        <img src="https://puui.qpic.cn/vpic/0/y056266t1bb.png/0" />
+                                    </div>
+                                    <div class="chat-vid__content">
+                                        <div class="chat-vid__name">Prepare for your first skateboard jump</div>
+                                        <div class="chat-vid__by">Jordan Wise</div>
+                                        <div class="chat-vid__info">125.908 views <span class="seperate"></span>2 days
+                                            ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-vid anim" style="--delay: .5s">
+                                <div class="chat-vid__wrapper">
+                                    <div class="chat-vid__img">
+                                        <img src="https://puui.qpic.cn/vpic/0/y056266t1bb.png/0" />
+                                    </div>
+                                    <div class="chat-vid__content">
+                                        <div class="chat-vid__name">Prepare for your first skateboard jump</div>
+                                        <div class="chat-vid__by">Jordan Wise</div>
+                                        <div class="chat-vid__info">125.908 views <span class="seperate"></span>2 days
+                                            ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-vid__button anim" style="--delay: .6s">查看所有相关视频 (99)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-area">
+                    <div class="music-header anim" style="--delay: .3s">受众音乐</div>
+                    <div class="musics">
+                        <div class="video anim" style="--delay: .4s">
+
+                            <div class="video-time">8 min</div>
+                            <div class="video-wrapper">
+                                <div class="author-img__wrapper video-author">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                    <img class="author-img"
+                                        src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                                </div>
+                            </div>
+                            <div class="video-by">A-吧啦吧啦</div>
+                            <div class="video-name">最欢迎歌单，就在我这里，这里有好多好多好多好多</div>
+                            <div class="video-view">54K views<span class="seperate video-seperate"></span>1 week ago
+                            </div>
+                            <div class="audio">
+                                <audio controls="controls" height="100" width="100"
+                                    src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+                            </div>
+
+                        </div>
+                        <div class="video anim" style="--delay: .5s">
+                            <div class="video-time">5 min</div>
+                            <div class="video-wrapper">
+                                <div class="author-img__wrapper video-author">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                    <img class="author-img"
+                                        src="https://images.pexels.com/photos/3370021/pexels-photo-3370021.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                                </div>
+                            </div>
+                            <div class="video-by offline">杰拉德绑定</div>
+                            <div class="video-name">准备你的第一次音乐律动跳跃</div>
+                            <div class="video-view">42K views<span class="seperate video-seperate"></span>1 week ago
+                            </div>
+                            <div class="audio">
+                                <audio controls="controls" height="100" width="100"
+                                    src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+                            </div>
+                        </div>
+                        <div class="video anim" style="--delay: .6s">
+                            <div class="video-time">7 min</div>
+                            <div class="video-wrapper">
+                                <div class="author-img__wrapper video-author">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                    <img class="author-img"
+                                        src="https://images.pexels.com/photos/1870163/pexels-photo-1870163.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                                </div>
+                            </div>
+                            <div class="video-by offline">约翰威斯康星州</div>
+                            <div class="video-name">安全玩音乐的基本律动！！！！！！！</div>
+                            <div class="video-view">64K views<span class="seperate video-seperate"></span>2 week ago
+                            </div>
+                            <figure class="audio">
+                                <audio controls="controls" height="100" width="100"
+                                    src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+                            </figure>
+                        </div>
+                        <div class="video anim" style="--delay: .7s">
+                            <div class="video-time">6 min</div>
+                            <div class="video-wrapper">
+                                <div class="author-img__wrapper video-author">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                    <img class="author-img"
+                                        src="https://images.pexels.com/photos/2889942/pexels-photo-2889942.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                                </div>
+                            </div>
+                            <div class="video-by">哈基姆</div>
+                            <div class="video-name">充满激情和节奏感的摇滚乐</div>
+                            <div class="video-view">50K views<span class="seperate video-seperate"></span>1 week ago
+                            </div>
+                            <div class="audio">
+                                <audio controls="controls" height="100" width="100"
+                                    src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-vid__container">
+                        <div class="music-header anim" style="--delay: .3s">TOP榜单</div>
+                        <div class="chat-flex">
+                            <div class="chat-vid anim" style="--delay: .4s">
+                                <div class="chat-vid__wrapper">
+                                    <div class="chat-vid__content">
+                                        <div class="chat-vid__name">这首歌曲充满了甜美的旋律和温暖的情感，令人陶醉。</div>
+                                        <div class="chat-vid__by">乔丹-位</div>
+                                        <div class="chat-vid__info">125.908 views <span class="seperate"></span>2 days
+                                            ago</div>
+                                    </div>
+                                    <div class="chat-audio">
+                                        <audio controls="controls"></audio>
+                                        <div class="music-chat button-wrapper">
+                                            <button class="like">
+                                                <svg viewBox="0 0 1024 1024" version="1.1">
+                                                    <path
+                                                        d="M32.20358 520.403757c-45.199663 25.799808-40.999694 94.599294 7.199946 114.599145L320.001432 752.002029v206.598459c0 36.19973 29.199782 65.399512 65.399513 65.399512 19.399855 0 37.799718-8.599936 50.199625-23.599824l123.999075-148.598891 247.798151 103.19923c37.799718 15.799882 81.599391-8.999933 87.799345-49.399632l127.999045-831.993792c3.799972-24.199819-6.799949-48.599637-26.999799-62.399535s-46.599652-14.999888-67.999492-2.799979l-895.993315 511.99618z m104.199222 50.99962L819.397707 181.206288 380.200983 672.002626l2.399982 1.999985-246.198163-102.599234z m670.195 279.397915l-333.197514-138.998963 428.196805-478.596429-94.999291 617.595392z"
+                                                        p-id="16528" fill="#e6e6e6"></path>
+                                                </svg>
+                                                Share
+                                            </button>
+                                            <button class="like red">
+                                                <svg t="1685255651520" class="icon" viewBox="0 0 1024 1024"
+                                                    version="1.1">
+                                                    <path
+                                                        d="M95.2 600.8l361.4 337.4c15 14 34.8 21.8 55.4 21.8s40.4-7.8 55.4-21.8l361.4-337.4c60.8-56.6 95.2-136 95.2-219v-11.6c0-139.8-101-259-238.8-282-91.2-15.2-184 14.6-249.2 79.8l-24 24-24-24c-65.2-65.2-158-95-249.2-79.8C101 111.2 0 230.4 0 370.2v11.6c0 83 34.4 162.4 95.2 219z"
+                                                        p-id="17118" fill="#e6e6e6"></path>
+                                                </svg>
+                                                Liked
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-vid anim" style="--delay: .5s">
+                                <div class="chat-vid__wrapper">
+                                    <div class="chat-vid__content">
+                                        <div class="chat-vid__name">节奏明快，带有强烈的节日气氛和欢乐的氛围。</div>
+                                        <div class="chat-vid__by">暮色天籁</div>
+                                        <div class="chat-vid__info">125.908 views <span class="seperate"></span>2 days
+                                            ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-vid anim" style="--delay: .6s">
+                                <div class="chat-vid__wrapper">
+                                    <div class="chat-vid__content">
+                                        <div class="chat-vid__name">充满力量和热血的电子舞曲。</div>
+                                        <div class="chat-vid__by">热情岁月</div>
+                                        <div class="chat-vid__info">125.908 views <span class="seperate"></span>2 days
+                                            ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-vid anim" style="--delay: .7s">
+                                <div class="chat-vid__wrapper">
+                                    <div class="chat-vid__content">
+                                        <div class="chat-vid__name">曲旋律优美，充满了浪漫和感性的情感。</div>
+                                        <div class="chat-vid__by">心灵之旅</div>
+                                        <div class="chat-vid__info">125.908 views <span class="seperate"></span>2 days
+                                            ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-vid__button anim" style="--delay: .6s">See All related Music (32)</div>
+                    </div>
+                </div>
+                <!-- <div class="music-area">
+                    <div class="music-container">
+                        <div class="music-content">11111</div>
+                        <div class="music-content">11111</div>
+                        <div class="music-content">11111</div>
+                        <div class="music-content">11111</div>
+                    </div>
+                    <div class="music-player">222</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://vjs.zencdn.net/5-unsafe/video.js'></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
